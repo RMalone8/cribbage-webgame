@@ -746,3 +746,59 @@ body {
     text-align: center;
   }
 }
+
+.difficulty-selector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 0;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.difficulty-selector label {
+  color: black;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.difficulty-dropdown {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #333;
+  font-size: 0.9em;
+  cursor: pointer;
+  min-width: 150px;
+}
+
+.difficulty-dropdown:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+.menu-button.practice-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: 2px solid #5a6fd8;
+}
+
+.menu-button.practice-button:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4c8f 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.menu-button.saved-games-button {
+  background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+  border: 2px solid #27ae60;
+}
+
+.menu-button.saved-games-button:hover {
+  background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(46, 204, 113, 0.4);
+}

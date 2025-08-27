@@ -1,0 +1,407 @@
+/* Matchmaking Styles */
+.matchmaking {
+  padding: 20px;
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.matchmaking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.matchmaking-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.back-button:hover {
+  background: #495057;
+}
+
+.matchmaking-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Quick Match Section */
+.quick-match-section {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.quick-match-section h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 24px;
+}
+
+.quick-match-section p {
+  color: #666;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-button.primary {
+  background: #28a745;
+  color: white;
+}
+
+.search-button.primary:hover {
+  background: #1e7e34;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.search-button.secondary {
+  background: #dc3545;
+  color: white;
+}
+
+.search-button.secondary:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+}
+
+.searching-status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.searching-spinner {
+  font-size: 48px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.searching-text {
+  font-size: 18px;
+  color: #666;
+  font-weight: 500;
+}
+
+.search-time {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  font-family: monospace;
+}
+
+/* Online Players Section */
+.online-players-section {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.online-players-section h3 {
+  margin: 0 0 15px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.online-players-section p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.players-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.player-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.player-name {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+}
+
+.player-status {
+  font-size: 14px;
+}
+
+.player-status.online {
+  color: #28a745;
+}
+
+.invite-button {
+  padding: 8px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.invite-button:hover {
+  background: #0056b3;
+}
+
+/* Invites Sections */
+.pending-invites-section,
+.sent-invites-section {
+  background: white;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pending-invites-section h3,
+.sent-invites-section h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.invites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.invite-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid #dee2e6;
+}
+
+.invite-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.invite-from,
+.invite-to {
+  font-weight: bold;
+  color: #333;
+}
+
+.invite-time {
+  font-size: 12px;
+  color: #666;
+}
+
+.invite-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.accept-button {
+  padding: 8px 16px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.accept-button:hover {
+  background: #1e7e34;
+}
+
+.decline-button {
+  padding: 8px 16px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.decline-button:hover {
+  background: #c82333;
+}
+
+.cancel-button {
+  padding: 8px 16px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.cancel-button:hover {
+  background: #495057;
+}
+
+/* Invite Modal */
+.invite-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.invite-modal {
+  background: white;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.invite-modal h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+  text-align: center;
+}
+
+.invite-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.invite-form label {
+  font-weight: bold;
+  color: #333;
+}
+
+.invite-form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.invite-form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0,123,255,0.25);
+}
+
+.invite-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.send-invite-button {
+  padding: 12px 24px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.send-invite-button:hover:not(:disabled) {
+  background: #1e7e34;
+}
+
+.send-invite-button:disabled {
+  background: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .matchmaking {
+    padding: 15px;
+  }
+  
+  .matchmaking-header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .player-item,
+  .invite-item {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .invite-actions {
+    justify-content: center;
+  }
+  
+  .invite-modal {
+    margin: 20px;
+    padding: 20px;
+  }
+}
